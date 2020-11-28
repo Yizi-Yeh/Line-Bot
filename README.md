@@ -12,9 +12,11 @@ Line-Bot 日日翻譯字典 [ 教えて！日本語 ]
 - 使用方法：
   輸入想查詢的單詞，若單詞與符合搜索結果，便能得到回覆。
 
+
 - 操作畫面：
 ![image](https://github.com/Yizi-Yeh/line-roboxtsuto/blob/main/gazou_2.jpg)
 ![image](https://github.com/Yizi-Yeh/line-roboxtsuto/blob/main/gazou_1.jpg)
+
 
 - 加入好友：
   @927uljux
