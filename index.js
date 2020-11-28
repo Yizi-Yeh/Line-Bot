@@ -37,7 +37,8 @@ bot.on('message', async event => {
       reply += $('.section-card .basic-card .kijiWrp .kiji .midashigo').eq(0).text() + '\n'
       const desc = $('.section-card .basic-card .kiji .Sgkdj p')
       for (let i = 0; i < desc.length; i++) {
-        reply += desc.eq(i).text() + '\n'
+        reply += desc.eq(i).text() + '\n' + '\n'
+        reply += '參考資料：'+ '\n'　+ 'https://www.weblio.jp/content/' + text
       }
     } else {
       if ($('#main #cont .kijiWrp .kiji').text()) {
@@ -45,10 +46,11 @@ bot.on('message', async event => {
         reply += $('#main #cont .kijiWrp .kiji .Jtnhj').eq(0).text() + '\n'
         const imi = $('#main #cont .kijiWrp .kiji .Sgkdj p')
         for (let j = 0; j < imi.length; j++) {
-          reply += imi.eq(j).text() + '\n'
-        }
+          reply += imi.eq(j).text() + '\n' + '\n'
+        } reply += '參考資料：'　+ '\n' + 'https://www.weblio.jp/content/' + text 
       }
     }
+ 
     console.log('reply: \n' + reply)
     // eslint-disable-next-line no-undef
     reply = (reply.length === 0) ? '言葉は見つからなかったよ...すみません。' : reply
@@ -58,6 +60,8 @@ bot.on('message', async event => {
     console.log(error)
   }
 })
+
+
 
 bot.listen('/', process.env.PORT, () => {
   console.log('機器人已啟動')
